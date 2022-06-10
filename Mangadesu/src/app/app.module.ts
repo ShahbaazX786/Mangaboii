@@ -14,6 +14,10 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { RulesComponent } from './components/rules/rules.component';
 import { ListComponent } from './components/list/list.component';
 import { SearchComponent } from './components/search/search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +36,10 @@ import { SearchComponent } from './components/search/search.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

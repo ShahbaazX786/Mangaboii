@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+/*Custom scroll-bar #Adding this in global so that the whole website can maintain custom scrollbar properties*/
+::-webkit-scrollbar{
+  width: 1em;
+}
+
+::-webkit-scrollbar-track{
+  /* background:rgb(248, 249, 248); */
+  border-radius: 100vw;
+  /* border: 1px solid black; */
+  margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb{
+  border: 2px solid white;
+  border-radius: 100vw;
+  background: black
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(0, 220, 100);
+}
+/*Custom scroll-bar */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
