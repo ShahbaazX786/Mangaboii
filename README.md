@@ -19,9 +19,11 @@ Est:20-7-2022 (July-20-2022)
 ```
 # Progress:
 ### Done:
-- 2.pnf 1 day (Done)
+- 2.pnf 1 day (Done) 
+    - #Try to remove the horizontal scrollbar as it is being caused when the screen is longer than navbar.
 - 3.header 1 day (Done)
-- 4.footer 1 day (Done) #Need to fix footer to bottom
+- 4.footer 1 day (Done) 
+    - #Need to fix footer to bottom
 - 5.about us 1 day (Done)
 - 11.rules/DMCA 1 day (Done)
 
