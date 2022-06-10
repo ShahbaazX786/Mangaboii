@@ -11,8 +11,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path:'home',component:HomeComponent},
   {path:'',redirectTo:'home', pathMatch:'full'},
+  {path:'home',component:HomeComponent},
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
   {path:'about',component:AboutComponent},
