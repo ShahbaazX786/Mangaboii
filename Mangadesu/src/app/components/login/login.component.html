@@ -1,9 +1,41 @@
 <div class="container">
-  <div class="content-box">
-    <div class="leftside">
-      <div class="txt-div">
-        <h2>Login to your Account</h2>
-      </div>
+  <img src="../../../assets/Backdrops/mangasidebanner.jpg" class="imgr">
+  <div class="content">
+    <mat-card>
+    <h2>Login To Your Account</h2>
+    <mat-card-content>
+      <div class="header">
+      <img src="../../../assets/gifs/login.gif" class="login-logo">
     </div>
-  </div>
+    <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+      <div class="email-input">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Email Address</mat-label>
+          <input formControlName="email" matInput required placeholder="abc@xyz.com"/>
+          <mat-error *ngIf="loginForm.get('email')?.errors required">
+            Please enter a valid Email
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input formControlName="password" matInput [type]="hide ? 'password':'text'" required/>
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'hide Password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off':'visibility'}}</mat-icon>
+          </button>
+          <mat-error *ngIf="loginForm.get('password')?.errors required">Please enter your password</mat-error>
+        </mat-form-field>
+        <div class="div-2">
+          <a class="aLink" routerLink="pnf">Forgot your Password?</a>
+          <a class="aLink" routerLink="../signup">New User?</a>
+        </div>
+      </div>
+      <div class="div-3">
+        <button class="btn">Login</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
+</div>
 </div>
