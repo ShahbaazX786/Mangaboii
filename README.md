@@ -31,6 +31,6 @@ Est:20-7-2022 (July-20-2022)
 - 1.Home page 5 days
 - 6.contact us 3 days
 - 7.list 10 days
-- 8.login 5 days
+- 8.login 5 days [2 days done and UI is completed fn need to add validations and API to DB]
 - 9.signup 5 days
 - 10.search 2 days
