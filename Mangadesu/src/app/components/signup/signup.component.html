@@ -1,1 +1,51 @@
-<p>signup works!</p>
+<div class="container">
+  <img src="../../../assets/Backdrops/mangasidebanner.jpg" class="imgr">
+  <div class="content">
+    <mat-card>
+      <h2>Lets create an account</h2>
+      <mat-card-content>
+        <div class="header">
+          <!-- <img src="../../../assets/gifs/login.gif" class="signup-logo"> -->
+        </div>
+        <form (ngSubmit)="onSignup()" name="loginForm" [formGroup]="signupForm">
+          <div class="username-input">
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Username</mat-label>
+              <input formControlName="email" matInput required placeholder="abc@xyz.com" />
+              <mat-error *ngIf="signupForm.get('email')?.errors required">
+                Please enter a valid Username
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="email-input">
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Email Address</mat-label>
+              <input formControlName="email" matInput required placeholder="abc@xyz.com" />
+              <mat-error *ngIf="signupForm.get('email')?.errors required">
+                Please enter a valid Email
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Password</mat-label>
+              <input formControlName="password" matInput [type]="hide ? 'password':'text'" required />
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'hide Password'"
+                [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off':'visibility'}}</mat-icon>
+              </button>
+              <mat-error *ngIf="signupForm.get('password')?.errors required">Please enter your password</mat-error>
+            </mat-form-field>
+            <div class="div-2">
+              <a class="aLink" routerLink="../login">Already a user?</a>
+            </div>
+          </div>
+          <div class="div-3">
+            <button class="btn">Register</button>
+            <button class="btn" routerLink="../home">Cancel</button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

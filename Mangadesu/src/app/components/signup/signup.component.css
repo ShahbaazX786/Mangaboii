@@ -1,0 +1,134 @@
+.container {
+  /* background-color: red; */
+  padding: 60px 50px;
+}
+
+.imgr {
+  position: absolute;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 92vh;
+  width: 99vw;
+  position: absolute;
+  top: 8%;
+  left: 0%;
+  opacity: 0.4;
+  /* -ms-transform: translate(-50%, -50%); */
+  /* transform: translate(-50%, -50%); */
+}
+
+/* .content::before{
+  content:'';
+  float: left;
+  background-image: url(../../../assets/Backdrops/mangasidebanner.jpg);
+  z-index: 1;
+  position: absolute;
+  width: 200px;
+  height: 100%;
+} */
+
+
+.mat-card {
+  /* background-color: green; debugging*/
+  font-family: Helvetica;
+  color: black;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  max-height: 800px;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.login-logo {
+  height: 120px;
+  width: 180px;
+  border-radius: 5px;
+}
+
+h2 {
+  text-transform: uppercase;
+  padding: 2px;
+  font-size: 28px;
+  font-weight: bold;
+  /* background-color: red; */
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+}
+
+.full-width {
+  cursor: pointer;
+  width: 80%;
+}
+
+.forgot-password {
+  cursor: pointer;
+  padding-left: 0px;
+}
+
+.email-input {
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.aLink {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 0px 15px;
+  float: center;
+  text-decoration: none;
+}
+
+.btn {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding: 10px 30px;
+  margin-right: 30px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s, transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.btn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
