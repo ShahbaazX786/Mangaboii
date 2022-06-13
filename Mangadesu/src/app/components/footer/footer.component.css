@@ -1,3 +1,7 @@
+.container{
+  font-size: 14px;
+}
+
 .site-footer{
   border-top: 3px solid #ebebeb;
   text-align: center;
@@ -52,7 +56,7 @@ p{
 
 
 @media only screen and (max-width: 768px)  {
-  .site-footer{
-    padding: 45px 0px 40px 0px;
+  .container, p{
+    font-size: 10px;
   }
 }
