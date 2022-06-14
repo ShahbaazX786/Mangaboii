@@ -1,42 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&family=Montserrat:wght@100;200;500&family=Pacifico&family=Roboto:wght@100;400&family=Square+Peg&display=swap');
 
-.container{
+.container-fluid {
   position: relative;
-  min-height: 100%;
+  min-height: 91%;
+  max-height: 100%;
+  /* padding-top: 10px; */
+  /* background-color: red; */
+  /* padding-bottom: 10px; */
 }
-.content{
+
+.content {
   position: relative;
   padding: 100px 0px 240px;
 }
 
-.aboutus{
-  width: 100%;
+.aboutus {
+  width: 80%;
   font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  padding-top: 30px;
 }
 
-h1{
+h1 {
   font-family: 'Kanit', sans-serif;
   font-size: 65px;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
-strong{
-  font-size: 25px;
-  text-transform: uppercase;
-}
-
-p{
-  width: 70vw;
-}
-
-.div-1::after{
+.container-fluid::after {
   z-index: -1;
-  position: absolute;
-  top:0;
-  right: 0;
-  width: 200px;
-  height: 97%;
   background: url(../../../assets/Backdrops/bg_about_v2.png) no-repeat;
+  position: absolute;
+  top: 0;
+  /* top: 7px; */
+  right: 0;
+  /* right: -121px; */
+  width: 200px;
+  height: 100%;
   content: "";
+}
+
+@media only screen and (max-width:618px) {
+  h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width:455px) {
+  .container-fluid::after {
+    display: none;
+  }
+
+  .container-fluid {
+    position: relative;
+    min-height: 90%;
+    max-height: 100%;
+    min-width: 80%;
+    max-width: 100%;
+    /* background-color: red; */
+  }
+
+  .content {
+    position: relative;
+    padding: 100px 0px 2px;
+  }
+
+  .aboutus {
+    width: 100%;
+  }
 }
